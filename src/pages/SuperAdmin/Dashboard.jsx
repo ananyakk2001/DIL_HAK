@@ -1004,7 +1004,7 @@ function Dashboard() {
                         Oat cake lemon drops gummi pie cake cotton.
                       </div>
                     </div>
-                    <a href="Products.List.html" className="btn btn-icon btn-icon-start btn-outline-primary stretched-link">
+                    <a href="/productadmin-add" className="btn btn-icon btn-icon-start btn-outline-primary stretched-link">
                       <i data-acorn-icon="plus"></i>
                       <span>Add Products</span>
                     </a>
