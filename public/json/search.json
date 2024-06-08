@@ -1,0 +1,50 @@
+[
+    {
+        "label": "Dashboard",
+        "url": "/"
+    },
+    {
+        "label": "Admin > Product admin",
+        "url": "/productadmin"
+    },
+    {
+        "label": "Admin > Order admin",
+        "url": "/orderadmin"
+    },
+    {
+        "label": "Admin > Sales admin",
+        "url": "/salesadmin"
+    },
+    {
+        "label": "Products > Category",
+        "url": "/categories"
+    },
+    {
+        "label": "Products > Product",
+        "url": "/products"
+    },
+    {
+        "label": "Products > Discount",
+        "url": "/discount"
+    },
+    {
+        "label": "Orders > Order",
+        "url": "/orderlist"
+    },
+    {
+        "label": "Orders > Details",
+        "url": "/orderdetails"
+    },
+    {
+        "label": "Sales",
+        "url": "/orderdetails"
+    },
+    {
+        "label": "Customer > Customer",
+        "url": "/customerlist"
+    },
+    {
+        "label": "Customer > Reviews",
+        "url": "#"
+    }
+]

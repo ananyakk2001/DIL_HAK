@@ -1,0 +1,395 @@
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+*,*:before,*:after{box-sizing:border-box}
+
+.login_body{
+  min-height:100vh;
+  min-width:100vw;
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(237, 133, 159);
+}
+
+.login_container{
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background-color: rgb(237, 133, 159);
+  &:hover,&:active{
+    .login_top,.login_bottom,.login_top2,.login_bottom2{
+      &:before, &:after{
+        margin-left: 200px;
+        transform-origin: -200px 50%;
+        transition-delay:0s;
+        
+      }
+    }
+    
+    .login_center{
+      opacity:1;
+      transition-delay:0.2s;
+      
+    }
+  }
+}
+
+.login_top, .login_top2, .login_bottom, .login_bottom2{
+  &:before, &:after{
+    content:'';
+    display:block;
+    position:absolute;
+    width:200vmax;
+    height:200vmax;
+    top:50%;left:50%;
+    margin-top:-100vmax;
+    transform-origin: 0 50%;
+    transition:all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+    z-index:10;
+    opacity:0.65;
+    transition-delay:0.2s;
+    
+  }
+}
+
+.login_top{
+  &:before{
+    transform:rotate(0deg);
+    background:transparent;
+    position: absolute;
+    border-radius:50%;
+    box-shadow: 10px 10px 10px 10px rgb(142, 10, 96);
+  }
+  &:after{
+    transform:rotate(45deg);
+    background:transparent;
+    position: absolute;
+    border-radius:50%;
+    box-shadow: 10px 10px 10px 10px rgb(142, 10, 96);
+  }
+}
+
+.login_top2{
+  &:before{
+    transform:rotate(90deg);
+    background:transparent;
+    position: absolute;
+    border-radius:50%;
+    box-shadow: 10px 10px 10px 10px rgb(142, 10, 96);
+  }
+  &:after{
+    transform:rotate(135deg);
+    background:transparent;
+    position: absolute;
+    border-radius:50%;
+    box-shadow: 10px 10px 10px 10px rgb(142, 10, 96);
+  }
+}
+
+.login_bottom{
+  &:before{
+    transform:rotate(180deg);
+    background:transparent;
+    position: absolute;
+    border-radius:50%;
+    box-shadow: 10px 10px 10px 10px rgb(142, 10, 96);
+  }
+  &:after{
+    transform:rotate(225deg);
+    background:transparent;
+    position: absolute;
+    border-radius:50%;
+    box-shadow: 10px 10px 10px 10px rgb(142, 10, 96);
+  }
+}
+.login_bottom2{
+  &:before{
+    transform:rotate(270deg);
+    background:transparent;
+    position: absolute;
+    border-radius:50%;
+    box-shadow: 10px 10px 10px 10px rgb(142, 10, 96);
+  }
+  &:after{
+    transform:rotate(315deg);
+    background:transparent;
+    position: absolute;
+    border-radius:50%;
+    box-shadow: 10px 10px 10px 10px rgb(142, 10, 96);
+  }
+}
+
+.login_center{
+  position:absolute;
+  width:400px;
+  height:400px;
+  top:50%;left:50%;
+  margin-left:-200px;
+  margin-top:-230px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:30px;
+  opacity:0;
+  transition:all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+  transition-delay:0s;
+  color:#333;
+  
+  .login_email{
+    border-color:rgb(237, 133, 159);
+    text-align: center;
+    color: rgb(237, 133, 159);
+    background-color: transparent;
+    padding:15px;
+    margin:5px;
+  }
+  
+  .login_email::placeholder{
+    text-align: center;
+    color: rgb(237, 133, 159);
+  }
+  .login_password{
+    border-color:rgb(237, 133, 159);
+    text-align: center;
+    color: rgb(237, 133, 159);
+    background-color: transparent;
+    padding:15px;
+    margin:5px;
+  }
+
+  .login_password::placeholder{
+    text-align: center;
+    color: rgb(237, 133, 159);
+  }
+  .icon{
+    position: absolute;
+    color:rgb(237, 133, 159) ;
+    margin-top: 20px;
+    margin-left: 15px;
+    
+  }
+  #password_button{
+    position: absolute;
+    color:rgb(237, 133, 159) ;
+    margin-top: -42px;
+    margin-left: 75%;
+    border:none;
+    background: transparent;
+  }
+  .login_image{
+    height:50%;
+    width:50%;
+    overflow: visible;
+    margin-left: 25%;
+    
+  }
+  .login_submit{
+    
+    transition: 0.2s;
+    height: 20%;
+    width: 25%;
+    margin-left: 39%;
+    margin-top: 5px;
+    
+    border-radius: 10px;
+    border: 1px solid rgb(237, 133, 159);
+    color:rgb(237, 133, 159) ;
+    background-color: whitesmoke;
+
+    
+  }
+  .login_submit:hover{
+    border-radius: 10px;
+    border: 1px solid rgb(237, 133, 159);
+    color:  whitesmoke ;
+    background-color: rgb(237, 133, 159);
+    box-shadow: 2px 2px 2px 2px rgb(142, 10, 96);
+  }
+} */
+
+*,*:before,*:after{box-sizing:border-box}
+
+.login_body{
+  min-height:100vh;
+  min-width:100vw;
+  font-family: 'Raleway', sans-serif;
+  background-color: white
+}
+
+.login_container{
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  
+  &:hover,&:active{
+    .login_top, .login_bottom{
+      &:before, &:after{
+        margin-left: 200px;
+        transform-origin: -200px 50%;
+        transition-delay:0s;
+      }
+    }
+    
+    .login_center{
+      opacity:1;
+      transition-delay:0.2s;
+    }
+  }
+}
+
+.login_top, .login_bottom{
+  &:before, &:after{
+    content:'';
+    display:block;
+    position:absolute;
+    width:200vmax;
+    height:200vmax;
+    top:50%;left:50%;
+    margin-top:-100vmax;
+    transform-origin: 0 50%;
+    transition:all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+    z-index:10;
+    opacity:0.65;
+    transition-delay:0.2s;
+  }
+}
+
+.login_top{
+  &:before{
+    transform:rotate(45deg);
+    background:rgb(237, 133, 159);
+    border-radius:50%;
+    box-shadow: 10px 10px 10px 10px rgb(142, 10, 96);
+  }
+  &:after{
+    transform:rotate(135deg);
+    background:rgb(237, 133, 159);
+    border-radius:50%;
+    box-shadow: 10px 10px 10px 10px rgb(142, 10, 96);
+  }
+}
+
+.login_bottom{
+  &:before{
+    transform:rotate(-45deg);
+    background:rgb(237, 133, 159);
+    border-radius:50%;
+    box-shadow: 10px 10px 10px 10px rgb(142, 10, 96);
+  }
+  &:after{
+    transform:rotate(-135deg);
+    background:rgb(237, 133, 159);
+    border-radius:50%;
+    box-shadow: 10px 10px 10px 10px rgb(142, 10, 96);
+  }
+}
+
+.login_center{
+  margin:0;
+  padding:0;
+  position:absolute;
+  width:400px;
+  height:400px;
+  top:30%;
+  left:35%;
+  /* margin-left:-200px;  */
+  /* margin-top:-230px; */
+  /* display:flex; */
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* padding:30px; */
+  opacity:0;
+  transition:all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+  transition-delay:0s;
+  color:#333;
+  background-color: transparent;
+  
+  .login_input{
+    margin:0;
+    padding:0;
+    background-color: white;
+    border-color: rgb(237, 133, 159);
+    height: 20%;
+    width: 90%;
+    margin-left: 10px;
+  }
+  
+  .login_email{
+    margin:0;
+    padding:0;
+    width: 88%;
+    margin-top: 5px;
+    margin-left: 35px;
+    background-color: white;
+    border-color: transparent;
+    color:rgb(237, 133, 159) ;
+
+  }
+  
+  .login_email::placeholder{
+    color:rgb(237, 133, 159) ;
+
+  }
+  .login_password{
+    margin:0;
+    padding:0;
+    width: 88%;
+    margin-top: 5px;
+    margin-left: 35px;
+    background-color: white;
+    border-color: transparent;
+    color:rgb(237, 133, 159) ;
+    
+  }
+
+  .login_password::placeholder{
+    color:rgb(237, 133, 159) ;
+
+  }
+  .icon{
+    position: absolute;
+    color:rgb(237, 133, 159) ;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 15px;
+    
+  }
+  #password_button{
+    position: absolute;
+    color:rgb(237, 133, 159) ;
+    margin-top: -34px;
+    margin-left: 80%;
+    border:none;
+    background: white;
+    font-size: 15px;
+    padding: 4px 6px;
+  }
+  .login_image{
+    margin:0;
+    padding: 0;
+    height:80%;
+    width:80%;
+    overflow: visible;
+    margin-left: 7%;
+    margin-top: -30px;
+  }
+  .login_submit{
+    transition: 0.2s;
+    height: 15%;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(237, 133, 159);
+    color:  whitesmoke ;
+    background-color: rgb(237, 133, 159);
+  }
+  .login_submit:hover{
+    border-radius: 10px;
+    border: 1px solid rgb(237, 133, 159);
+    color:rgb(237, 133, 159) ;
+    background-color: whitesmoke;
+  }
+}
